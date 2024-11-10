@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มสมัครสมาชิกห้องสมุด</title>
+</head>
+<body>
+
+<h2>ฟอร์มสมัครสมาชิกห้องสมุด</h2>
+
+<form action="" method="POST">
+    <label for="fullname-thai">ชื่อ – นามสกุล (ภาษาไทย):</label>
+    <input type="text" id="fullname-thai" name="fullname-thai" required placeholder="กรุณากรอกชื่อ-นามสกุล ภาษาไทย">
+    <br><br>
+
+    <label for="fullname-english">ชื่อ – นามสกุล (ภาษาอังกฤษ):</label>
+    <input type="text" id="fullname-english" name="fullname-english" required placeholder="กรุณากรอกชื่อ-นามสกุล ภาษาอังกฤษ">
+    <br><br>
+
+    <label for="gender">เพศ:</label>
+    <input type="radio" id="male" name="gender" value="ชาย" required>
+    <label for="male">ชาย</label>
+    <input type="radio" id="female" name="gender" value="หญิง" required>
+    <label for="female">หญิง</label>
+    <br><br>
+
+    <label for="student-id">รหัสนักศึกษา:</label>
+    <input type="text" id="student-id" name="student-id" pattern="[0-9]{10}" required placeholder="กรุณากรอกรหัสนักศึกษา (10 หลัก)">
+    <br><br>
+
+    <label for="faculty">คณะที่ศึกษา:</label>
+    <select id="faculty" name="faculty" required>
+        <option value="วิศวกรรมศาสตร์">วิศวกรรมศาสตร์</option>
+        <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+        <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+        <option value="คณะมนุษยศาสตร์">คณะมนุษยศาสตร์</option>
+    </select>
+    <br><br>
+
+    <label for="email">ที่อยู่อีเมล (E-mail address):</label>
+    <input type="email" id="email" name="email" required placeholder="กรุณากรอกอีเมล">
+    <br><br>
+
+    <label for="dob">วันเดือนปีเกิด:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <label for="book-interest">ประเภทของหนังสือที่สนใจ:</label>
+    <select id="book-interest" name="book-interest[]" multiple required>
+        <option value="นิยาย">นิยาย</option>
+        <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+        <option value="ประวัติศาสตร์">ประวัติศาสตร์</option>
+        <option value="ศิลปะ">ศิลปะ</option>
+        <option value="เทคโนโลยี">เทคโนโลยี</option>
+    </select>
+    <br><br>
+
+    <label for="newsletter">ความต้องการรับข่าวสารข้อมูลทางอีเมล:</label>
+    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+    <label for="newsletter">ต้องการรับข่าวสาร</label>
+    <br><br>
+
+    <button type="submit">สมัครสมาชิก</button>
+</form>
+
+</body>
+</html>
